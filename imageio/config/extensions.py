@@ -543,12 +543,22 @@ extension_list = [
     FileExtension(
         name="Medical Imaging NetCDF",
         extension=".mnc",
-        priority=["ITK"],
+        priority=["MINC1", "ITK"],
     ),
     FileExtension(
         name="Medical Imaging NetCDF 2",
         extension=".mnc2",
         priority=["ITK"],
+    ),
+    FileExtension(
+        name="Compressed Medical Imaging NetCDF",
+        extension=".mnc.gz",
+        priority=["MINC1"],
+    ),
+    FileExtension(
+        name="bzip2 Compressed Medical Imaging NetCDF",
+        extension=".mnc.bz2",
+        priority=["MINC1"],
     ),
     FileExtension(
         name="Leaf Raw Image Format",

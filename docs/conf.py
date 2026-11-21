@@ -27,6 +27,7 @@ import imageio.plugins.fits
 import imageio.plugins.freeimage
 import imageio.plugins.gdal
 import imageio.plugins.lytro
+import imageio.plugins.minc
 import imageio.plugins.npz
 import imageio.plugins.pillow_legacy
 import imageio.plugins.simpleitk

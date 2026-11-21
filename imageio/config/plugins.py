@@ -129,6 +129,9 @@ known_plugins["tifffile"] = PluginConfig(
 known_plugins["SPE"] = PluginConfig(
     name="spe", class_name="SpePlugin", module_name="imageio.plugins.spe"
 )
+known_plugins["MINC1"] = PluginConfig(
+    name="minc1", class_name="Minc1Plugin", module_name="imageio.plugins.minc"
+)
 known_plugins["rawpy"] = PluginConfig(
     name="rawpy", class_name="RawPyPlugin", module_name="imageio.plugins.rawpy"
 )
