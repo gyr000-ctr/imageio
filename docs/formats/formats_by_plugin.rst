@@ -47,6 +47,9 @@ plugins to install and/or depend on in your project.
 :mod:`Numpy <imageio.plugins.npz>`
     npz
 
+:mod:`NIfTI-1 <imageio.plugins.nifti>`
+    nii, nii.gz
+
 :mod:`BSDF <imageio.plugins.bsdf>`
     bsdf
 

@@ -305,6 +305,13 @@ extension_list = [
         priority=["ITK", "pydicom"],
     ),
     FileExtension(
+        name="GZip-compressed NIfTI-1",
+        extension=".gz",
+        priority=["NIFTI"],
+        external_link="https://nifti.nimh.nih.gov/nifti-1/",
+        volume_support=True,
+    ),
+    FileExtension(
         name="Graphics Interchange Format",
         extension=".gif",
         priority=["pillow", "GIF-PIL", "pyav"],
@@ -607,13 +614,18 @@ extension_list = [
         priority=["ITK"],
     ),
     FileExtension(
+        name="NIfTI-1",
         extension=".nii",
-        priority=["ITK"],
+        priority=["NIFTI", "ITK"],
+        external_link="https://nifti.nimh.nih.gov/nifti-1/",
+        volume_support=True,
     ),
     FileExtension(
-        name="nii.gz",
+        name="NIfTI-1 (gzip-compressed)",
         extension=".nii.gz",
-        priority=["ITK"],
+        priority=["NIFTI", "ITK"],
+        external_link="https://nifti.nimh.nih.gov/nifti-1/",
+        volume_support=True,
     ),
     FileExtension(
         name="Numpy Array",

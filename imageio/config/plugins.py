@@ -780,6 +780,17 @@ for name, i, des, ext, mode, class_name, module_name in FREEIMAGE_FORMATS:
     )
     known_plugins[config.name] = config
 
+# NIfTI-1 plugin (v3). Registered after the legacy plugins on purpose, so the
+# full-fallback search order of all existing plugins is left untouched; for
+# `.nii`/`.nii.gz` the plugin is selected through the extension priority in
+# ``config.extensions`` instead.
+known_plugins["NIFTI"] = PluginConfig(
+    name="NIFTI",
+    class_name="NiftiPlugin",
+    module_name="imageio.plugins.nifti",
+    install_name="numpy",
+)
+
 # exists for backwards compatibility with FormatManager
 # delete in V3
 _original_order = [x for x, config in known_plugins.items() if config.is_legacy]
